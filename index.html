@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="testing">
+    <div class="container tapa p-4 pt-5 mt-5">
+        <div class="container folio p-4">
+            <div class="row">
+                    <div class="col-12 text-center mt-5">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+
+                    <div class="col-12 mt-5 px-5 mb-5">
+                            <h1>Ozeloge</h1>
+                            <h5 class="text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in sapien turpis.
+                                 Sed molestie neque eget fringilla auctor. 
+                                Vestibulum suscipit condimentum ante, et porttitor est. Curabitur metus urna, 
+                                iaculis sed ex dictum
+                            </h5>
+                    </div>
+                    <div class="col-12 mt-5 text-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/URp0BR2fKis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h6 class="text-secondary">Esta es la descripción del video,</h6>
+                        <h6 class="text-secondary">Bla Bla Bla</h6>
+                    </div>
+                    <div class="col-12 mt-5 px-5">
+                        <ul class="list-group">
+                            <li class="list-group-item titleList"><h3> <b>ESTO ES UN TITULO</b></h3></li>
+                            <li class="list-group-item">Esto es algun compensate</li>
+                            <li class="list-group-item">Esto es algun compensate</li>
+                            <li class="list-group-item">Esto es algun compensate</li>
+                            <li class="list-group-item">Esto es algun compensate</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 mt-5 px-5 text-center">
+                            <div  id="">
+                                    <h2>Solo quedan:</h2>
+                                    <div class="clock row mt-3">
+                                        <div class="col-2 offset-2">
+                                            <h1 id="Dias"></h1>
+                                            <h3>Dias</h3>
+                                        </div>
+                                        <div class="col-2">
+                                                <h1 id="Horas"></h1>
+                                                <h3>Horas</h3>
+                                        </div>
+                                        <div class="col-2">
+                                                <h1 id="Minutos"></h1>
+                                                <h3>Minutos</h3>
+                                        </div>                                    
+                                        <div class="col-2">
+                                                <h1 id="Segundos"></h1>
+                                                <h3>Segundos</h3>
+                                        </div>                                    
+                                    </div>
+                            </div>
+                        </div>                    
+                    <div class="col-12 mt-5 px-5">
+                        <h4 class="pl-1">Apuntate:</h4>
+                        <form>
+                            <div class="input-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btnMail">Enviar</button>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 mt-5 px-5 text-center">
+                        <h3>Ya somos:</h3>
+                        <h1 id="players"></h1>
+                    </div>
+                    <div class="col-12 mt-5 px-5 text-center mb-5">
+                        <h1>¡Algo más grande está por vernir!</h1>
+                        <a href="#"></a><button  href="#" class="btn btnWeb" onclick="counter()">Conócenos</button></a>
+
+                    </div>
+                    <div class="col-12 mt-5 px-5 text-center">
+                            <img src="img/logo.svg" alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    let countDownDate = new Date("Jun 5, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+let x = setInterval(function() {
+
+  // Get today's date and time
+  let now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  let distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let players = 15;
+  // Display the result in the element with id="demo"
+  document.getElementById("Dias").innerHTML = days;
+  document.getElementById("Horas").innerHTML = hours;
+  document.getElementById("Minutos").innerHTML = minutes;
+  document.getElementById("Segundos").innerHTML = seconds;
+  document.getElementById("players").innerHTML = players;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("counter").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+<script src="js/index.js"></script>
+</html>
