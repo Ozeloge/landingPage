@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body class="testing">
-    <div class="container tapa p-4 pt-5 mt-5">
-        <div class="container folio p-4">
+    <div class="container tapa p-sm-1 p-lg-4 pt-5 my-5">
+        <div class="container folio p-sm-1 p-lg-4">
             <div class="row">
                     <div class="col-12 text-center mt-5">
                         <img src="img/logo.svg" alt="">
                     </div>
 
-                    <div class="col-12 mt-5 px-5 mb-5">
+                    <div class="col-12 mt-5 px-sm-2 px-lg-5 mb-5">
                             <h1>Ozeloge</h1>
                             <h5 class="text-justify">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in sapien turpis.
@@ -26,11 +26,11 @@
                             </h5>
                     </div>
                     <div class="col-12 mt-5 text-center">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/URp0BR2fKis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/URp0BR2fKis"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h6 class="text-secondary">Esta es la descripción del video,</h6>
                         <h6 class="text-secondary">Bla Bla Bla</h6>
                     </div>
-                    <div class="col-12 mt-5 px-5">
+                    <div class="col-12 mt-5 px-sm-2 px-lg-5">
                         <ul class="list-group">
                             <li class="list-group-item titleList"><h3> <b>ESTO ES UN TITULO</b></h3></li>
                             <li class="list-group-item">Esto es algun compensate</li>
@@ -39,30 +39,13 @@
                             <li class="list-group-item">Esto es algun compensate</li>
                         </ul>
                     </div>
-                    <div class="col-12 mt-5 px-5 text-center">
-                            <div  id="">
+                    <div class="col-12 mt-5 px-sm-2 px-lg-5  text-center">
+                            <div >
                                     <h2>Solo quedan:</h2>
-                                    <div class="clock row mt-3">
-                                        <div class="col-2 offset-2">
-                                            <h1 id="Dias"></h1>
-                                            <h3>Dias</h3>
-                                        </div>
-                                        <div class="col-2">
-                                                <h1 id="Horas"></h1>
-                                                <h3>Horas</h3>
-                                        </div>
-                                        <div class="col-2">
-                                                <h1 id="Minutos"></h1>
-                                                <h3>Minutos</h3>
-                                        </div>                                    
-                                        <div class="col-2">
-                                                <h1 id="Segundos"></h1>
-                                                <h3>Segundos</h3>
-                                        </div>                                    
-                                    </div>
+                                    <h1 id="counter"></h1>
                             </div>
                         </div>                    
-                    <div class="col-12 mt-5 px-5">
+                    <div class="col-12 mt-5 px-sm-2 px-lg-5">
                         <h4 class="pl-1">Apuntate:</h4>
                         <form>
                             <div class="input-group">
@@ -73,16 +56,16 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-12 mt-5 px-5 text-center">
+                    <div class="col-12 mt-5 px-sm-2 px-lg-5 text-center">
                         <h3>Ya somos:</h3>
                         <h1 id="players"></h1>
                     </div>
-                    <div class="col-12 mt-5 px-5 text-center mb-5">
+                    <div class="col-12 mt-5 px-sm-2 px-lg-5 text-center mb-5">
                         <h1>¡Algo más grande está por vernir!</h1>
                         <a href="#"></a><button  href="#" class="btn btnWeb" onclick="counter()">Conócenos</button></a>
 
                     </div>
-                    <div class="col-12 mt-5 px-5 text-center">
+                    <div class="col-12 mt-5 px-sm-2 px-lg-5 mb-5 text-center">
                             <img src="img/logo.svg" alt="">
                     </div>
             </div>
@@ -110,12 +93,8 @@ let x = setInterval(function() {
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
     let players = 15;
-  // Display the result in the element with id="demo"
-  document.getElementById("Dias").innerHTML = days;
-  document.getElementById("Horas").innerHTML = hours;
-  document.getElementById("Minutos").innerHTML = minutes;
-  document.getElementById("Segundos").innerHTML = seconds;
-  document.getElementById("players").innerHTML = players;
+    document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
