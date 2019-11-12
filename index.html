@@ -13,8 +13,9 @@
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Squada+One&display=swap" rel="stylesheet">
     <meta property="og:image" content="https://ozeloge.github.io/landingPage/img/logo.png">
+    <script src="https://kit.fontawesome.com/4ac13b7a89.js"></script>
 </head>
 <body class="testing">
     <div class="container tapa p-sm-1 p-lg-4 pt-5 my-5">
@@ -25,28 +26,26 @@
                     </div>
 
                     <div class="col-12 mt-5 px-sm-2 px-lg-5 mb-5">
-                            <h1 class="squada-one">Ozeloge</h1>
-                            <h5 class="text-justify open-sans">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in sapien turpis.
-                                 Sed molestie neque eget fringilla auctor. 
-                                Vestibulum suscipit condimentum ante, et porttitor est. Curabitur metus urna, 
-                                iaculis sed ex dictum
-                            </h5>
+                            <h1 class="squada-one">OZELOGE</h1>
+                            <h4 class="text-justify open-sans">
+                                    Ozeloge, la siguiente revolución social. Juega al fútbol, completa los retos y
+                                    acumula puntos de experiencia para convertirte en el próximo <b>MVP</b> de 
+                                    <a href="#" onclick="redirect()">nuestra comunidad.</a>
+                            </h4>
                     </div>
                     <div class="col-12 mt-5 text-center">
                         <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/URp0BR2fKis"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <h6 class="text-secondary open-sans">Esta es la descripción del video,</h6>
-                        <h6 class="text-secondary open-sans">Bla Bla Bla</h6>
+                        <h6 class="text-secondary open-sans mt-3">Esta es la descripción del video</h6>
                     </div>
                     <div class="col-12 mt-5 px-sm-2 px-lg-5">
                         <ul class="list-group">
-                            <li class="list-group-item titleList squada-one"><h3>ESTO ES UN TITULO</h3></li>
-                            <li class="list-group-item open-sans">Esto es algun compensate</li>
-                            <li class="list-group-item open-sans">Esto es algun compensate</li>
-                            <li class="list-group-item open-sans">Esto es algun compensate</li>
-                            <li class="list-group-item open-sans">Esto es algun compensate</li>
+                            <li class="list-group-item titleList squada-one"><h3>OZELOGE SPRING TOURNAMENT 2020</h3></li>
+                            <li class="list-group-item open-sans"><i class="fas fa-users"></i>10 Equipos</li>
+                            <li class="list-group-item open-sans"><i class="fas fa-trophy"></i> 1 Copa</li>
+                            <li class="list-group-item open-sans"><i class="fas fa-medal"></i> 10 Medallas</li>
+                            <li class="list-group-item open-sans"><i class="fas fa-pizza-slice"></i> Y Mucha Comida!!</li>
                         </ul>
                     </div>
                     <div class="col-12 mt-5 px-sm-2 px-lg-5  text-center">
@@ -56,10 +55,10 @@
                             </div>
                         </div>                    
                     <div class="col-12 mt-5 px-sm-2 px-lg-5">
-                        <h4 class="pl-1 squada-one">Apuntate:</h4>
-                        <form>
+                        <h2 class="pl-1 squada-one">Apuntate para obtener más información:</h2>
+                        <form onsubmit="sendEmail()">
                             <div class="input-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@email.com">
                                     <div class="input-group-append">
                                         <button type="submit" class="btn btnMail">Enviar</button>
                                     </div>
@@ -72,7 +71,7 @@
                     </div>
                     <div class="col-12 mt-5 px-sm-2 px-lg-5 text-center mb-5">
                         <h1 class="squada-one">¡Algo más grande está por vernir!</h1>
-                        <a href="#"></a><button  href="#" class="btn btnWeb" onclick="counter()">Conócenos</button></a>
+                        <a href="#"></a><button  href="#" class="btn btnWeb" onclick="redirect()">Conócenos</button></a>
 
                     </div>
                     <div class="col-12 mt-5 px-sm-2 px-lg-5 mb-5 text-center">
