@@ -1,2 +1,2 @@
-# landingPage
+# Landing Page
 Lading Page
