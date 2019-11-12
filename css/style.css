@@ -27,17 +27,27 @@
 .btnMail{
     background-color: #1a4b20!important;
     color: #ffffff!important;
+    font-family: 'Open Sans', sans-serif;
 }
 .btnMail:hover{
     background-color: #3b8d27!important;
     color: #ffffff!important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .btnWeb{
     background-color: #1a4b20!important;
     color: #ffffff!important;
+    font-family: 'Open Sans', sans-serif;
 }
 .btnWeb:hover{
     background-color: #3b8d27!important;
     color: #ffffff!important;
+    font-family: 'Open Sans', sans-serif;
+}
+.squada-one{
+    font-family: 'Squada One', cursive;
+}
+.open-sans{
+    font-family: 'Open Sans', sans-serif;
 }
