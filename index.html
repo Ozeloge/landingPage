@@ -12,7 +12,7 @@
     <meta property="og:description" content="Ozeloge, the next revolution. Play football and meet people.">
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Squada+One&display=swap" rel="stylesheet">
     <meta property="og:image" content="https://ozeloge.github.io/landingPage/img/logo.png">
     <script src="https://kit.fontawesome.com/4ac13b7a89.js"></script>
@@ -74,16 +74,38 @@
                         <a href="#"></a><button  href="#" class="btn btnWeb" onclick="redirect()">Conócenos</button></a>
 
                     </div>
-                    <div class="col-12 mt-5 px-sm-2 px-md-5 mb-5 text-center">
-                            <img src="img/logo.svg" alt="">
-                    </div>
             </div>
         </div>
+        <div class="footer">
+                <div class="container p-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" onclick="redirect()"><h3 class="squada-one">OZELOGE APP <span id="year"></span>&copy;</h3></a>
+                        </div>
+                            <div class="col-6 ">
+                                <div class="row float-right">
+                                    <div class="col-auto">
+                                        <h3><i class="fab fa-instagram"></i></h3>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h3><i class="fab fa-twitter"></i></h3>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h3><i class="fab fa-facebook"></i></h3>
+                                    </div>
+                                    <div class="col-auto">
+                                            <h3><i class="fab fa-linkedin"></i></h3>
+                                    </div>
+                                </div>  
+                            </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
     let countDownDate = new Date("Jun 5, 2020 15:37:25").getTime();
 
@@ -95,7 +117,7 @@ let x = setInterval(function() {
 
   // Find the distance between now and the count down date
   let distance = countDownDate - now;
-
+  let year = new Date().getFullYear();
   // Time calculations for days, hours, minutes and seconds
   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -105,6 +127,7 @@ let x = setInterval(function() {
   document.getElementById("counter").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   document.getElementById("players").innerHTML = players;
+  document.getElementById("year").innerHTML = year;
 
   // If the count down is finished, write some text
   if (distance < 0) {

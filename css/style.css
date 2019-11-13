@@ -51,3 +51,10 @@
 .open-sans{
     font-family: 'Open Sans', sans-serif;
 }
+.footer{
+    background-color: #1a4b20!important;
+    color:#ffffff;
+}
+.footer a {
+    color:inherit!important;
+}
