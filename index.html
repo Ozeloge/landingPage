@@ -18,91 +18,104 @@
     <script src="https://kit.fontawesome.com/4ac13b7a89.js"></script>
 </head>
 <body class="testing">
-    <div class="container-fluid">
-            <div class="container tapa px-sm-1 px-md-4 pt-5 my-5 pb-5">
-                    <div class="container folio p-sm-1 p-md-4">
-                        <div class="row">
-                                <div class="col-12 text-center mt-5">
-                                    <img src="img/logo.svg" alt="">
-                                </div>
-            
-                                <div class="col-12 mt-5 px-sm-2 px-md-5 mb-5">
-                                        <h1 class="squada-one">OZELOGE</h1>
-                                        <h4 class="text-justify open-sans">
-                                                Ozeloge, la siguiente revolución social. Juega al fútbol, completa los retos y
-                                                acumula puntos de experiencia para convertirte en el próximo <b>MVP</b> de 
-                                                <a href="#" onclick="redirect()">nuestra comunidad.</a>
-                                        </h4>
-                                </div>
-                                <div class="col-12 mt-5 text-center">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/URp0BR2fKis"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <h6 class="text-secondary open-sans mt-3">Esta es la descripción del video</h6>
-                                </div>
-                                <div class="col-12 mt-5 px-sm-2 px-md-5">
-                                    <ul class="list-group">
-                                        <li class="list-group-item titleList squada-one"><h3>Torneo De Primavera: OZELOGE CUP 2020</h3></li>
-                                        <li class="list-group-item open-sans"><i class="fas fa-users"></i>10 Equipos</li>
-                                        <li class="list-group-item open-sans"><i class="fas fa-trophy"></i> 1 Copa</li>
-                                        <li class="list-group-item open-sans"><i class="fas fa-medal"></i> 10 Medallas</li>
-                                        <li class="list-group-item open-sans"><i class="fas fa-pizza-slice"></i> Y Mucha Comida!!</li>
-                                    </ul>
-                                </div>
-                                <div class="col-12 mt-5 px-sm-2 px-md-5  text-center">
-                                        <div >
-                                                <h2 class="open-sans">Solo quedan:</h2>
-                                                <h1 class="squada-one" id="counter"></h1>
-                                        </div>
-                                    </div>                    
-                                <div class="col-12 mt-5 px-sm-2 px-md-5">
-                                    <h2 class="pl-1 squada-one">Apuntate para obtener más información:</h2>
-                                    <form onsubmit="sendEmail()">
-                                        <div class="input-group">
-                                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@email.com">
-                                                <div class="input-group-append">
-                                                    <button type="submit" class="btn btnMail">Enviar</button>
-                                                </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-12 mt-5 px-sm-2 px-md-5 text-center">
-                                    <h3 class="open-sans">Ya somos:</h3>
-                                    <h1 class="squada-one" id="players"></h1>
-                                </div>
-                                <div class="col-12 mt-5 px-sm-2 px-md-5 text-center mb-5">
-                                    <h1 class="squada-one">¡Algo más grande está por venir!</h1>
-                                    <a href="#"></a><button  href="#" class="btn btnWeb" onclick="redirect()">Conócenos</button></a>
-            
-                                </div>
+    <div class="container">
+        <div class="tapa mt-5">
+                <div class="row">
+                        <div class="col-12 text-center d-none d-lg-block">
+                                <img src="./img/clipboard/clip.png" alt="" class="clip img-fluid">
                         </div>
-                    </div>
-                    <div class="footer">
-                            <div class="container p-3">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="#" onclick="redirect()"><h3 class="squada-one">OZELOGE APP <span id="year"></span>&copy;</h3></a>
-                                    </div>
-                                        <div class="col-6 ">
-                                            <div class="row float-right">
-                                                <div class="col-auto">
-                                                    <h3><i class="fab fa-instagram"></i></h3>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <h3><i class="fab fa-twitter"></i></h3>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <h3><i class="fab fa-facebook"></i></h3>
-                                                </div>
-                                                <div class="col-auto">
-                                                        <h3><i class="fab fa-linkedin"></i></h3>
-                                                </div>
-                                            </div>  
-                                        </div>
-                                </div>
-                            </div>
+                        <div class="col-12 text-center d-md-none">
+                                <img src="./img/clipboard/clip.mini.png" alt="" class="clip img-fluid">
                         </div>
                 </div>
+                <div class="container-fluid px-sm-1 px-md-4 mb-5 pb-5">
+                        <div class="container folio p-sm-1 p-md-4">
+                            <div class="row">
+                                    <div class="col-12 text-center mt-sm-3 mt-lg-5 d-md-none">
+                                        <img class="" src="img/logo.mini.svg" alt="">
+                                    </div>
+                                    <div class="col-12 text-center mt-sm-3 mt-lg-5 d-none d-lg-block">
+                                        <img class="" src="img/logo.svg" alt="">
+                                    </div>
+                                    <hr></hr>
+                                    <div class="col-12 mt-sm-3 mt-lg-5 px-sm-2 px-md-5 mb-5">
+                                            <h1 class="squada-one">OZELOGE</h1>
+                                            <h4 class="text-justify open-sans">
+                                                    Ozeloge, la siguiente revolución social. Juega al fútbol, completa los retos y
+                                                    acumula puntos de experiencia para convertirte en el próximo <b>MVP</b> de 
+                                                    <a href="#" onclick="redirect()">nuestra comunidad.</a>
+                                            </h4>
+                                    </div>
+                                    <div class="col-12 mt-sm-3 mt-lg-5 text-center">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/URp0BR2fKis"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <h6 class="text-secondary open-sans mt-3">Esta es la descripción del video</h6>
+                                    </div>
+                                    <div class="col-12 mt-sm-3 mt-lg-5 px-sm-2 px-md-5">
+                                        <ul class="list-group">
+                                            <li class="list-group-item titleList squada-one"><h3>Torneo De Primavera: OZELOGE CUP 2020</h3></li>
+                                            <li class="list-group-item open-sans"><i class="fas fa-users"></i>10 Equipos</li>
+                                            <li class="list-group-item open-sans"><i class="fas fa-trophy"></i> 1 Copa</li>
+                                            <li class="list-group-item open-sans"><i class="fas fa-medal"></i> 10 Medallas</li>
+                                            <li class="list-group-item open-sans"><i class="fas fa-pizza-slice"></i> Y Mucha Comida!!</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 mt-sm-3 mt-lg-5 px-sm-2 px-md-5  text-center">
+                                            <div >
+                                                    <h2 class="open-sans">Solo quedan:</h2>
+                                                    <h1 class="squada-one" id="counter"></h1>
+                                            </div>
+                                        </div>                    
+                                    <div class="col-12 mt-sm-3 mt-lg-5 px-sm-2 px-md-5">
+                                        <h2 class="pl-1 squada-one">Apuntate para obtener más información:</h2>
+                                        <form onsubmit="sendEmail()">
+                                            <div class="input-group">
+                                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@email.com">
+                                                    <div class="input-group-append">
+                                                        <button type="submit" class="btn btnMail">Enviar</button>
+                                                    </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-12 mt-sm-3 mt-lg-5 px-sm-2 px-md-5 text-center">
+                                        <h3 class="open-sans">Ya somos:</h3>
+                                        <h1 class="squada-one" id="players"></h1>
+                                    </div>
+                                    <div class="col-12 mt-sm-3 mt-lg-5 px-sm-2 px-md-5 text-center mb-5">
+                                        <h1 class="squada-one">¡Algo más grande está por venir!</h1>
+                                        <a href="#"></a><button  href="#" class="btn btnWeb" onclick="redirect()">Conócenos</button></a>
+                
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                                <div class="container p-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" onclick="redirect()"><h3 class="squada-one">OZELOGE APP <span id="year"></span>&copy;</h3></a>
+                                        </div>
+                                            <div class="col-6 ">
+                                                <div class="row float-right">
+                                                    <div class="col-auto">
+                                                        <h3><i class="fab fa-instagram"></i></h3>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <h3><i class="fab fa-twitter"></i></h3>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <h3><i class="fab fa-facebook"></i></h3>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                            <h3><i class="fab fa-linkedin"></i></h3>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+        </div>
     </div>
 
 </body>
