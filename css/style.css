@@ -10,7 +10,10 @@
 }
 
 .tapa{
-    background: #000000;
+    /* background: #000000; */
+    background-color: #946300;
+    background-image: url("../img/clipboard/wine-cork.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     height: 100%;
     width: 100%;
     border-radius: 13px;
@@ -21,8 +24,10 @@
     z-index: 100;
 }
 .folio{
-
+    border-top-right-radius: 10px;
     background: #eeeeee!important;
+    border-top-left-radius: 10px;
+
     color:#000000!important;
 }
 .titleList{
