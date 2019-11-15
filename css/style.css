@@ -20,8 +20,17 @@
 }
 .clip{
     position: relative;
-    top:20%;
+    top:60%;
     z-index: 100;
+}
+.clipMini{
+    position: relative;
+    top:100%;
+    z-index: 100;
+}
+.corkBg{
+    background-color: #946300!important;
+    background-image: url("../img/clipboard/wine-cork.png")!important;
 }
 .folio{
     border-top-right-radius: 10px;
@@ -31,12 +40,13 @@
     color:#000000!important;
 }
 .titleList{
-    background-color: #1a4b20!important;
+    background-color: #946300!important;
+    background-image: url("../img/clipboard/wine-cork.png")!important;
     color: #ffffff!important;
 
 }
 .btnMail{
-    background-color: #1a4b20!important;
+    background-color: #387427!important;
     color: #ffffff!important;
     font-family: 'Open Sans', sans-serif;
 }
@@ -47,7 +57,7 @@
 }
 
 .btnWeb{
-    background-color: #1a4b20!important;
+    background-color: #387427!important;
     color: #ffffff!important;
     font-family: 'Open Sans', sans-serif;
 }
@@ -63,8 +73,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 .footer{
-    background-color: #1a4b20!important;
+    background-color: #387427;    
+    /* background-color: #1a4b20!important; */
     color:#ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 }
 .footer a {
     color:inherit!important;
